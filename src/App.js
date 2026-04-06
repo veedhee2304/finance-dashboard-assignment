@@ -1417,15 +1417,15 @@ export default function App() {
             )}
 
             {page === "analytics" && (
-              <div style={{ color: T.text }}>Analytics coming soon...</div>
+              <AnalyticsPage transactions={transactions} T={T} />
             )}
 
             {page === "budgets" && (
-              <div style={{ color: T.text }}>Budgets coming soon...</div>
+              <BudgetsPage transactions={transactions} T={T} />
             )}
 
             {page === "insights" && (
-              <div style={{ color: T.text }}>Insights coming soon...</div>
+              <InsightsPage transactions={transactions} T={T} />
             )}
 
           </div>
